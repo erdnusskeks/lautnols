@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= @memory.name %></p>
+
+<p><%= @memory.description %></p>
+
+<p><%= image_tag(@memory.picture_url, :width => 600) if @memory.picture.present? %></p>
+
+<%= link_to 'Edit', edit_memory_path(@memory) %> |
+<%= link_to 'Back', memories_path %>
