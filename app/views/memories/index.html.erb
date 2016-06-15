@@ -5,12 +5,8 @@
         <h4 data-scroll-reveal="enter from the bottom after 0.2s"><%= memory.subtitle %></h4>
         <h4 data-scroll-reveal="enter from the bottom after 0.3s"><%= memory.description %></h4>
         <%= image_tag(memory.picture_url, :width => 600) if memory.picture.present? %>
-        <p><%= link_to 'Show', memory %></p>
-        <p><%= link_to 'Edit', edit_memory_path(memory) %></p>
-        <p><%= link_to 'Destroy', memory, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <p><%= link_to 'Show', memory %> | <%= link_to 'Edit', edit_memory_path(memory) %> | <%= link_to 'Destroy', memory, method: :delete, data: { confirm: 'Are you sure?' } %></p>
     <% end %>
 
-
-<br>
 
 <%= link_to 'New Memory', new_memory_path %>
