@@ -6,6 +6,9 @@ gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'carrierwave'
+gem 'redcarpet', '~> 2.1.1'
+gem 'coderay', '~> 1.0.7'
+gem 'youtube_addy'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

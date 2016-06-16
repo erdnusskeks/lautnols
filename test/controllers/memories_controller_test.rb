@@ -18,7 +18,7 @@ class MemoriesControllerTest < ActionController::TestCase
 
   test "should create memory" do
     assert_difference('Memory.count') do
-      post :create, memory: { description: @memory.description, name: @memory.name, picture: @memory.picture }
+      post :create, memory: { description: @memory.description, name: @memory.name, picture: @memory.picture, subtitle: @memory.subtitle }
     end
 
     assert_redirected_to memory_path(assigns(:memory))
@@ -35,7 +35,7 @@ class MemoriesControllerTest < ActionController::TestCase
   end
 
   test "should update memory" do
-    patch :update, id: @memory, memory: { description: @memory.description, name: @memory.name, picture: @memory.picture }
+    patch :update, id: @memory, memory: { description: @memory.description, name: @memory.name, picture: @memory.picture, subtitle: @memory.subtitle }
     assert_redirected_to memory_path(assigns(:memory))
   end
 
